@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hijos">
+            <form class="form" action="mailto:anny_smontano@soy.sena.edu.co" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre del modelo</label>
+                    <input placeholder="marca" type="text"><br>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_computadora">Tipo de computadora</label>
+                    <select name="animal" size="1"> 
+                        <option selected>---Tipo pc---</option>
+                        <option value="ave">pc</option>
+                        <option>Todo en uno</option>
+                        <option>Escritorio</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nombre">Tamaño del disco duro </label>
+                    <input placeholder="Tamaño del disco duro" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Modelo del CPU</label>
+                    <input placeholder="Modelo del CPU" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">memoria RAM</label>
+                    <input placeholder="memoria RAM" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label for="nombre">sistema operativo</label>
+                    <input placeholder="sistema operativo" type="text">
+                    
+                </div>
+                <a href="mailto:anny_smontano@soy.sena.edu.co">
+                    <input class="boton" value="enviar"  type="button">
+                </a>
+        </form>
+        </div>
+        <div class="hijos">
+            <form class="form" action="mailto:anny_smontano@soy.sena.edu.co" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre del modelo</label>
+                    <input placeholder="marca" type="text"><br>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_computadora">Tipo de computadora</label>
+                    <select name="animal" size="1"> 
+                        <option selected>---Tipo pc---</option>
+                        <option value="ave">pc</option>
+                        <option>Todo en uno</option>
+                        <option>Escritorio</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nombre">Tamaño del disco duro </label>
+                    <input placeholder="Tamaño del disco duro" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Modelo del CPU</label>
+                    <input placeholder="Modelo del CPU" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">memoria RAM</label>
+                    <input placeholder="memoria RAM" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label for="nombre">sistema operativo</label>
+                    <input placeholder="sistema operativo" type="text">
+                    
+                </div>
+                <a href="mailto:anny_smontano@soy.sena.edu.co">
+                    <input class="boton" value="enviar"  type="button">
+                </a>
+        </form>
+        </div>
+        <div class="hijos">
+            <form class="form" action="mailto:anny_smontano@soy.sena.edu.co" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre del modelo</label>
+                    <input placeholder="marca" type="text"><br>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_computadora">Tipo de computadora</label>
+                    <select name="animal" size="1"> 
+                        <option selected>---Tipo pc---</option>
+                        <option value="ave">pc</option>
+                        <option>Todo en uno</option>
+                        <option>Escritorio</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nombre">Tamaño del disco duro </label>
+                    <input placeholder="Tamaño del disco duro" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Modelo del CPU</label>
+                    <input placeholder="Modelo del CPU" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">memoria RAM</label>
+                    <input placeholder="memoria RAM" type="text">
+                </div>
+                <div class="form-group"> 
+                  <label for="nombre">sistema operativo</label>
+                    <input placeholder="sistema operativo" type="text">
+                    
+                </div>
+                <a href="mailto:anny_smontano@soy.sena.edu.co">
+                    <input class="boton" value="enviar"  type="button">
+                </a>
+        </form>
+        </div>
+    </div>
+
+    <style>
+        .container{
+    
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            overflow: auto;
+           
+        }
+        .hijos{
+            border: black solid;
+            padding: 50px;
+            margin: 10px; /* Separa los hijos */
+            position: relative;
+        }
+        
+       
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra todos los elementos dentro del form horizontalmente */
+            
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center; /* Alinea verticalmente el label y el input */
+            margin: 6px 0; /* Espacio entre cada grupo de label e input */
+            width: 100%; /* Ajusta el ancho para que el contenido ocupe el ancho del contenedor */
+            max-width: 500px; /* Ajusta el ancho máximo si es necesario */
+            
+        }
+
+        label {
+            flex: 1; /* Asegura que el label tenga un ancho fijo pero flexible */
+            margin-right: 10px; /* Espacio entre el label y el input */
+            text-align: right; /* Alinea el texto del label a la derecha */
+        }
+
+        input, select {
+            flex: 2; /* Asegura que el input tenga un ancho flexible y se ajuste al contenedor */
+            width: 100%; /* Hace que los inputs tomen todo el ancho disponible en su contenedor */
+            max-width: 300px; /* Ajusta el ancho máximo */
+            padding: 5px;
+            box-sizing: border-box; /* Asegura que el padding no aumente el tamaño del input */
+        }
+        
+        .boton{
+            width: 100px;
+            position: relative;
+            left: 120px; /* Mueve el botón al borde izquierdo del contenedor */
+        }
+       
+       
+    </style>
+        
+</body>
+</html>
